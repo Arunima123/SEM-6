@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html> 
+      
+<head> 
+      
+    <!-- CSS style to set alternate table  
+            row using color -->
+    <style> 
+        .animated {
+            position: relative;
+            left: 1000px;
+        }
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+        } 
+          
+        th, td { 
+            text-align: left; 
+            padding: 8px; 
+        } 
+          
+        tr:nth-child(even) { 
+            background-color: Pink; 
+        }
+
+        tr:nth-child(odd) { 
+            background-color: Lightgreen; 
+        } 
+
+    </style> 
+</head> 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({left: '0px'});
+  });
+});
+</script> 
+<body> 
+
+ 
+
+<div class="animated">
+  <img src = "flower.jpg" id ="id1"></img>
+    <table id ="table1"  style="width:25%"> 
+        <tr> 
+            <th>Name</th> 
+            <th>Designation</th> 
+            <th>Salary</th> 
+        </tr> 
+          
+        <tr> 
+            <td>Anirudh</td> 
+            <td>CEO</td> 
+            <td>1,00,000</td> 
+        </tr> 
+          
+        <tr> 
+            <td>SURAJ</td> 
+            <td>CFO</td> 
+            <td>50,000</td> 
+        </tr> 
+          
+        <tr> 
+            <td>Abhinav</td> 
+            <td>Analyst</td> 
+            <td>35,000</td> 
+        </tr> 
+    </table> 
+    <button>Start Animation</button>
+     
+     </div>   
+
+ 
+
+</body> 
+
+ 
+
+
+</script>
+</html> 

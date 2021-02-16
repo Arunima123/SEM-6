@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").css("background-color",$("#bgcolor").val()); 
+    $("div").css("font-family",$("#fonttype").val()) 
+    ("div").css("font-size",$("#bgcolor").val())
+});
+});
+</script> 
+<body> 
+
+ 
+
+<body>
+<div style="position: absolute; width: 400px;background-color: yellow; height: 700px;border: double; right:0px">
+    <h1>Happy Birthday, and many more</h1>
+    <img src="flower.jpg" style="height: 200px"; ></img><br>
+    
+</div>
+<h1>Birthday Card</h1>
+
+ 
+
+<p1>Choose a bg color</p1>
+
+ 
+
+<select id="bgcolor">
+  <option value="Yellow">Yellow</option>
+  <option value="Blue">Blue</option>
+</select>
+<br></br>
+<p1>Choose a font</p1>
+
+ 
+
+<select id="fonttype">
+  <option value="Verdana">Verdana</option>
+  <option value="Times New Roman">TNR</option>
+</select>
+<br></br>
+
+ 
+
+<p1>Choose a font size</p1>
+<input type="text" id="text1">
+  <p>Choose a border Style</p>
+  <input type="radio" id="None" value="None">
+  <label for="None">None</label><br>
+  <input type="radio" id="Double" value="Double">
+  <label for="Double">Double</label><br>
+  <input type="radio" id="Solid"  value="Solid">
+  <label for="Solid">Solid</label>
+
+ 
+
+  <br>  
+  <br>
+<p1>Add default Picture</p1>
+<input type="checkbox" id="checkbox1" value="cb1">
+<br>
+<br>
+<p1>Enter greeting text below</p1><br><br>
+<input type="textarea" id="txarea1"><br><br>
+<button id="button">Update</button>
+
+ 
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("button").click(function(){
+                var sum=0;
+                if($("select").val()=="HP"){
+                    if($("#text1").prop("checked")==true && $("#text2").prop("checked")==true){
+                        sum=sum+parseInt($("#quantity").val())*10000;
+                        sum=sum+parseInt($("#quantity").val())*40000;
+                    }
+                    if($("#text1").prop("checked")==true){
+                        sum=sum+parseInt($("#quantity").val())*10000;
+                    }
+                    else{
+                        sum=sum+parseInt($("#quantity").val())*40000;
+                    }
+                }
+                else if($("select").val()=="Nokia"){
+                    if($("#text1").prop("checked")==true && $("#text2").prop("checked")==true){
+                        sum=sum+parseInt($("#quantity").val())*10000;
+                        sum=sum+parseInt($("#quantity").val())*40000;
+                    }
+                    if($("#text1").prop("checked")==true){
+                        sum=sum+parseInt($("#quantity").val())*10000;
+                    }
+                    else{
+                        sum=sum+parseInt($("#quantity").val())*40000;
+                    }
+                }
+                else if($("select").val()=="Samsung"){
+                    if($("#text1").prop("checked")==true && $("#text2").prop("checked")==true){
+                        sum=sum+parseInt($("#quantity").val())*20000;
+                        sum=sum+parseInt($("#quantity").val())*50000;
+                    }
+                    if($("#text1").prop("checked")==true){
+                        sum=sum+parseInt($("#quantity").val())*20000;
+                    }
+                    else{
+                        sum=sum+parseInt($("#quantity").val())*50000;
+                    }
+                }
+                else if($("select").val()=="Motorola"){
+                    if($("#text1").prop("checked")==true && $("#text2").prop("checked")==true){
+                        sum=sum+parseInt($("#quantity").val())*30000;
+                        sum=sum+parseInt($("#quantity").val())*60000;
+                    }
+                    if($("#text1").prop("checked")==true){
+                        sum=sum+parseInt($("#quantity").val())*30000;
+                    }
+                    else{
+                        sum=sum+parseInt($("#quantity").val())*60000;
+                    }
+                }
+                else{
+                    if($("#text1").prop("checked")==true && $("#text2").prop("checked")==true){
+                        sum=sum+parseInt($("#quantity").val())*40000;
+                        sum=sum+parseInt($("#quantity").val())*70000;
+                    }
+                    if($("#text1").prop("checked")==true){
+                        sum=sum+parseInt($("#quantity").val())*40000;
+                    }
+                    else{
+                        sum=sum+parseInt($("#quantity").val())*70000;
+                    }
+                }
+
+ 
+
+ 
+
+ 
+
+                alert(sum);
+            });
+        });
+    </script>
+</head>
+<body>
+    <form>
+
+ 
+
+ 
+
+ 
+
+        <select name = "dropdown">
+            <option value = "HP" selected>HP</option>
+            <option value = "Nokia">Nokia</option>
+            <option value = "Samsung">Samsung</option>
+            <option value = "Motorola">Motorola</option>
+            <option value = "Apple">Apple</option>
+
+ 
+
+ 
+
+ 
+
+        </select>
+        <br>
+        <input type="checkbox" id="text1" value="Mobile">Mobile<br>
+        <input type="checkbox" id="text2" value="Laptop">Laptop<br>
+        Quantity: <input type="text" id="quantity">
+        <br>
+        <button>Produce Bill</button>
+    </form>
+</body>
+</html>
