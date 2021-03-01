@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;">
+    <head>
+        <title>Question 3</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body style="min-height: 100%; width: 100%; background-color:maroon;">
+        <div class="container" style="min-height: 100%; height: 100%;">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="jumbotron">
+                        <h1 class="display-3">IT Lab</h1>
+                        <hr class="my-2">
+                        <p>Get Started</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-sm" style="background-color: #FEE; padding: 20px;">
+                    <form>
+                        <h4>Login</h4>
+                        <div class="form-group">
+                          <label for="">Registration Number</label>
+                          <input type="text" name="inpReg" id="inpReg" class="form-control" placeholder="Enter registration number" aria-describedby="helpReg">
+                          <small id="helpReg" class="text-muted">123456789</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Password</label>
+                            <input type="password" name="inpPass" id="inpPass" class="form-control" placeholder="Enter password" aria-describedby="helpReg">
+                          </div>
+                    </form>
+                    <br>
+                    <button type="button" name="" id="" class="btn btn-primary btn-md btn-block">Submit</button>
+                </div>
+                <div class="col-sm" style="background-color: #EFE; padding: 20px;">
+                    <h4>Download Manual</h4>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="inpL1" id="inpL1" value="checkedValue" checked>
+                            Lab 1
+                      </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="inpL1" id="inpL1" value="checkedValue" checked>
+                            Lab 2
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="inpL1" id="inpL1" value="checkedValue" checked>
+                            Lab 3
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="inpL1" id="inpL1" value="checkedValue" checked>
+                            Lab 4
+                        </label>
+                    </div>
+                    <br>
+                    <h6>Format</h6>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="inpFormat" id="inpPDF" value="checkedValue" checked>
+                        PDF
+                      </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="inpFormat" id="inpWord" value="checkedValue">
+                        Word
+                      </label>
+                    </div>
+                    <br>
+                    <button type="button" name="" id="" class="btn btn-primary btn-md btn-block">Submit</button>
+                </div>
+                <div class="col-sm" style="background-color: #EEF;  padding: 20px;">
+                    <h4>Submit Assignment <span class="badge badge-info">New</span></h4>
+                    <div class="form-group">
+                      <label for="inpLab">Lab</label>
+                      <input type="number" class="form-control" name="inplab" id="inpLab" aria-describedby="helpLab" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="inpAssgn">Solution</label>
+                      <textarea class="form-control" name="inpAssgn" id="inpAssgn" rows="2"></textarea>
+                    </div>
+                    <button type="button" name="" id="" class="btn btn-primary btn-md btn-block">Submit</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

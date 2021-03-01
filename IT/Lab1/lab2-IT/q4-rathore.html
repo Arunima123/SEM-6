@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+</head>
+<body>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="logo.png" style="height: fit-content" >
+    </div>
+    <div class="carousel-item">
+        <table class="table table-bordered table-dark">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th></th>
+                <th scope="col">8-10</th>
+                <th scope="col">10-12</th>
+                <th scope="col">12-2</th>
+              </tr>
+            </thead>
+            <tbody>
+                
+              <tr>
+                <th scope="row">1</th>
+                <td>Monday</td>
+                <td>DS</td>
+                <td>PCAP</td>
+                <td>IT Lab</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Tuesday</td>
+                <td>EEFM</td>
+                <td>--</td>
+                <td>OE-III</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Wednesday</td>
+                <td>PCAP</td>
+                <td>DS Lab</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Thursday</td>
+                <td>PE-II</td>
+                <td>--</td>
+                <td>PE-I</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Friday</td>
+                <td>DS</td>
+                <td>PCAP Lab</td>
+                <td>EEFM</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Saturday</td>
+                <td>--</td>
+                <td>PE-II</td>
+                <td>OE-III</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</body>
+</html>
