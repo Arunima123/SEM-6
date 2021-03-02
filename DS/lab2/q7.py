@@ -1,0 +1,16 @@
+# list functions and operations
+arr = []
+print(f"List: {arr}\n\nAppend 1,1,2,3:")
+arr.append(1)
+arr.append(1)
+arr.append(3)
+arr.append(2)
+print(f"{arr}\n\nCount of 1: {arr.count(1)}")
+print(f"\nIndex of 2: {arr.index(2)}")
+arr.reverse()
+print(f"\nReverse list: {arr}")
+arr.sort()
+print(f"\nSort list: {arr}")
+print(f"\nClear list")
+arr.clear()
+print(f"{arr}")
